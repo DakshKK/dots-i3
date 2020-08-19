@@ -1,0 +1,21 @@
+<!--
+	Icon source: https://www.materialui.co/icon/volume-up
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
+	<path d="M3 9
+		v6 h4 l5 5
+		V4 L7 9
+		H3z
+		m13.5 3
+		c0-1.77-1.02-3.29-2.5-4.03
+		v8.05
+		c1.48-.73 2.5-2.25 2.5-4.02z
+		M14 3.23
+		v2.06
+		c2.89.86 5 3.54 5 6.71
+		s-2.11 5.85-5 6.71
+		v2.06
+		c4.01-.91 7-4.49 7-8.77
+		s-2.99-7.86-7-8.77z"
+		fill="#bdebf2" />
+</svg>

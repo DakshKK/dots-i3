@@ -1,0 +1,14 @@
+<!--
+	Icon source: https://www.materialui.co/icon/volume-down
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
+	<path d="M18.5 12
+		c0-1.77-1.02-3.29-2.5-4.03
+		v8.05
+		c1.48-.73 2.5-2.25 2.5-4.02z
+		M5 9
+		v6 h4 l5 5
+		V4 L9 9
+		H5z"
+		fill="#bdebf2" />
+</svg>

@@ -1,0 +1,10 @@
+<!--
+	Icon source: https://www.materialui.co/icon/volume-mute
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
+	<path d="M7 9
+		v6 h4 l5 5
+		V4 l-5 5
+		H7z"
+		fill="#bdebf2" />
+</svg>

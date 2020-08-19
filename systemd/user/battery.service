@@ -1,0 +1,23 @@
+[Unit]
+Description=Battery Monitor
+StartLimitIntervalSec=0
+StopWhenUnneeded=yes
+
+[Service]
+Type=simple
+WorkingDirectory=/home/dakksh/.config/i3
+#
+# The following lines are not required since they are environmment variables I have exported in my script.
+# But since a few people have said it is not working. You could use this to fix your issue
+# Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+# Environment=DISPLAY=:1
+#
+# You can place all your scripts in /usr/local/bin if you want. But accordingly make the changes.
+# Having relevant scripts in a much more easy to access place is easy for me
+ExecStart=/home/dakksh/.config/i3/scripts/battery.sh
+Restart=always
+RestartSec=1
+# RestartSec=5 is a better option, but script timing would mismatch a lot with when charger is plugged in
+
+[Install]
+WantedBy=default.target

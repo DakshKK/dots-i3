@@ -1,0 +1,20 @@
+<!--
+	Icon source: https://www.materialui.co/icon/mic
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
+	<path d="M12 14
+		c1.66 0 2.99-1.34 2.99-3
+		L15 5
+		c0-1.66-1.34-3-3-3
+		S9 3.34 9 5
+		v6
+		c0 1.66 1.34 3 3 3z
+		m5.3-3c0 3-2.54 5.1-5.3 5.1
+		S6.7 14 6.7 11
+		H5
+		c0 3.41 2.72 6.23 6 6.72
+		V21 h2 v-3.28
+		c3.28-.48 6-3.3 6-6.72
+		h-1.7z"
+		fill="#bdebf2" />
+</svg>

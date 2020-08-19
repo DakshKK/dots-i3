@@ -1,0 +1,111 @@
+[global]
+	monitor = 0
+	follow = mouse
+
+	geometry = "300x5-14+48"
+
+	indicate_hidden = yes
+	shrink = no
+	separator_height = 2
+	separator_color = "#3a464a"
+
+	padding = 15
+	horizontal_padding = 15
+	frame_width = 3
+	sort = yes
+	idle_threshold = 120
+
+	font = Anka/Coder 12
+	line_height = 4
+	# List of all supported pango html features
+	# https://developer.gnome.org/pango/stable/pango-Markup.html
+	markup = full
+	# allow_markup = yes
+	format = "<b>%s</b>\n%b"
+	alignment = left
+
+	# Show age of message if message is older than show_age_threshold
+	# seconds.
+	# Set to -1 to disable.
+	# show_age_threshold = 60
+	show_age_threshold = -1
+
+	word_wrap = yes
+	ignore_newline = no
+	stack_duplicates = true
+	hide_duplicate_count = true
+	show_indicators = yes
+
+	icon_position = left
+	max_icon_size = 40
+	icon_path = /home/dakksh/.config/i3/icons
+	# max_icon_size = 64
+
+	sticky_history = yes
+	history_length = 10
+
+	dmenu = /usr/bin/dmenu -p Website:
+
+	# browser = /usr/bin/firefox -new-tab
+	# You can use the last line after creating a profile by the name dunst
+	# The following 2 create in the current open window
+	# browser = /usr/bin/firefox -private-window
+	# browser = /usr/bin/firefox -private
+	# It will open all sites in a new private window, instead of the same
+	# browser = /usr/bin/firefox -no-remote -P dunst -private-window
+	always_run_script = true
+	title = Dunst
+	class = Dunst
+
+	startup_notification = false
+	corner_radius = 0
+
+	mouse_left_click = close_current
+	mouse_middle_click = do_action
+	mouse_right_click = close_all
+
+[shortcuts]
+	close = mod4+c
+	close_all = mod1+c
+	history = mod1+grave
+	context = mod1+shift+period
+
+[urgency_low]
+	timeout = 5
+	background = "#1d1f28"
+	foreground = "#dfe6e6"
+	frame_color = "#813fbf"
+
+[urgency_normal]
+	timeout = 5
+	background = "#1d1f28"
+	foreground = "#dfe6e6"
+	frame_color = "#4eb3c7"
+
+[urgency_critical]
+	timeout = 10
+	background = "#1d1f28"
+	foreground = "#dfe6e6"
+	frame_color = "#d15662"
+	
+[volume-notify]
+	timeout = 2
+	category = "volume-notify"
+	history_ignore = yes
+	set_stack_tag = "volume"
+	format = "<span font='Monospace 12' color='#4eb3c7'>%s%b</span>"
+
+[volume-notify-mute]
+	timeout = 2
+	category = "volume-notify-mute"
+	history_ignore = yes
+	set_stack_tag = "volume"
+	frame_color = "#6184c2"
+	format = "<span font='Monospace 12' color='#6184c2'>%s%b</span>"
+	
+[brightness-notify]
+	timeout = 2
+	category = "brightness-notify"
+	history_ignore = yes
+	set_stack_tag = "brightness"
+	format = "<span font='Monospace 12' color='#4eb3c7'>%s%b</span>"
