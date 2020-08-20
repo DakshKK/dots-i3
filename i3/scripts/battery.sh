@@ -186,7 +186,7 @@ checkBatteryLevel() {
 
 checkBatteryState() {
 	sleep 4
-	battery_time=$(acpi | grep -Eo '[0-9:]{3,}' | sed 's/:\w\w$/ mins/' | sed 's/:/h /')
+	battery_time=$(acpi | grep -Eo '[0-9:]{4,}' | sed 's/:\w\w$/ mins/' | sed 's/:/h /')
 
 	if [[ ${previous_state} == Discharging ]] && [[ ${battery_state} == Charging ]]; then
 		notify-send "Charging" "${battery_time} till full charge." -u normal
